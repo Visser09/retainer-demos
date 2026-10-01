@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Websites — Mitchel Visser</title>
+<meta name="description" content="Sample websites built for local businesses — a barber shop and a restaurant.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#f4f1ea;color:#23201b;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+  header{padding:72px 0 16px}
+  h1{font-size:clamp(32px,5vw,52px);letter-spacing:-.02em;line-height:1.1}
+  header p{color:#6b6257;margin-top:12px;font-size:18px;max-width:56ch}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:48px 0 40px}
+  @media(max-width:700px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid rgba(35,32,27,.1);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s;display:block}
+  .card:hover{transform:translateY(-4px);box-shadow:0 24px 60px -24px rgba(35,32,27,.3)}
+  .card img{aspect-ratio:16/10;object-fit:cover;width:100%}
+  .card .body{padding:26px 28px 30px}
+  .card .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#8a7f6f;margin-bottom:10px}
+  .card h2{font-size:24px;letter-spacing:-.01em;margin-bottom:8px}
+  .card p{color:#6b6257;font-size:15.5px}
+  .card .go{display:inline-block;margin-top:16px;font-weight:700;color:#b9502a}
+  footer{padding:24px 0 64px;color:#8a7f6f;font-size:14px}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>Sample websites</h1>
+  <p>Two examples of the one-page websites I build for local businesses — fast, mobile-friendly, and written in plain language. Built by Mitchel Visser, Prescott Ontario.</p>
+</div></header>
+<main><div class="wrap"><div class="grid">
+  <a class="card" href="./barber/">
+    <img src="./img/b8.jpg" alt="Barber shop sample website preview">
+    <div class="body"><span class="tag">Barber Shop</span><h2>King &amp; Main Barber Co.</h2>
+    <p>Dark, classic design with services and pricing, shop story, reviews, and tap-to-call booking.</p><span class="go">View sample →</span></div>
+  </a>
+  <a class="card" href="./restaurant/">
+    <img src="./img/f2.jpg" alt="Restaurant sample website preview">
+    <div class="body"><span class="tag">Restaurant</span><h2>The Riverside Kitchen</h2>
+    <p>Warm editorial design with a full menu, story, reviews, hours, and takeout ordering by phone.</p><span class="go">View sample →</span></div>
+  </a>
+</div></div></main>
+<footer><div class="wrap">
+  <span>© 2026 Mitchel Visser — sample work. Business names and reviews are placeholders; photography via Pexels.</span>
+</div></footer>
+</body>
+</html>
