@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fox Electric Inc | Electrical Contractors, Elizabethtown-Kitley and Brockville, Ontario</title>
+<meta name="description" content="Fox Electric Inc: industrial, commercial and residential electrical work in the Brockville and Elizabethtown-Kitley area. Industrial installations, machinery relocation, safety upgrades, networking, PLC and robotics. Open 24/7 for emergencies. ESA/ECRA #7009254.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314202e'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-weight='bold' font-size='15' fill='%23f2a007' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#f6f4ef; --surface:#ffffff; --navy:#14202e; --navy-2:#1d2f42;
+    --ink:#1c2733; --muted:#5d6a76; --faint:#8b96a0;
+    --amber:#f2a007; --amber-dark:#c77f02; --amber-soft:rgba(242,160,7,.12);
+    --line:rgba(20,32,46,.12);
+    --sans:"Archivo",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  ::selection{background:var(--amber);color:var(--navy)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+  header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+  header.scrolled{background:rgba(246,244,239,.94);backdrop-filter:blur(12px);border-color:var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand .mark{width:38px;height:38px;background:var(--navy);border-radius:8px;display:grid;place-items:center;font-weight:900;color:var(--amber);font-size:17px}
+  .brand .name{font-size:19px;font-weight:800;letter-spacing:-.01em;line-height:1.15}
+  .brand .name small{display:block;font-size:10px;letter-spacing:.26em;color:var(--muted);font-weight:700}
+  .nav-links{display:flex;gap:30px;list-style:none}
+  .nav-links a{text-decoration:none;font-size:13px;letter-spacing:.13em;font-weight:700;color:var(--muted);text-transform:uppercase;transition:color .2s}
+  .nav-links a:hover{color:var(--navy)}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;font-size:14px;letter-spacing:.04em;padding:14px 26px;border-radius:10px;border:2px solid var(--navy);color:var(--navy);transition:background .2s,color .2s,transform .15s}
+  .btn:hover{background:var(--navy);color:#fff}
+  .btn.solid{background:var(--amber);border-color:var(--amber);color:var(--navy)}
+  .btn.solid:hover{background:var(--amber-dark);border-color:var(--amber-dark);color:#fff}
+  .btn:active{transform:scale(.97)}
+  .nav .btn{padding:10px 20px;font-size:13px}
+  @media(max-width:760px){.nav-links{display:none}}
+  .hero{background:var(--navy);color:#eef2f5;position:relative;overflow:hidden;padding:158px 0 clamp(56px,8vh,88px)}
+  .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 34px,rgba(242,160,7,.05) 34px 35px)}
+  .hero-inner{position:relative;display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(32px,5vw,64px);align-items:end}
+  @media(max-width:860px){.hero-inner{grid-template-columns:1fr}}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.3em;color:var(--amber);text-transform:uppercase;margin-bottom:22px}
+  .eyebrow::before{content:"";width:34px;height:2px;background:var(--amber)}
+  h1{font-weight:900;font-size:clamp(42px,7vw,84px);line-height:1.02;letter-spacing:-.02em;max-width:13ch}
+  h1 em{font-style:normal;color:var(--amber)}
+  .hero-sub{margin-top:20px;max-width:48ch;color:#b9c4cd;font-size:clamp(16px,1.6vw,19px)}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+  .hero .btn{border-color:#eef2f5;color:#eef2f5}
+  .hero .btn:hover{background:#eef2f5;color:var(--navy)}
+  .hero .btn.solid{border-color:var(--amber);color:var(--navy)}
+  .hero .btn.solid:hover{background:var(--amber-dark);color:#fff}
+  .call-card{background:var(--navy-2);border:1px solid rgba(238,242,245,.14);border-radius:16px;padding:30px 28px}
+  .call-card .label{font-size:12px;font-weight:800;letter-spacing:.26em;color:var(--amber);text-transform:uppercase}
+  .call-card .number{display:block;font-size:clamp(30px,3.4vw,40px);font-weight:900;letter-spacing:-.01em;text-decoration:none;margin:10px 0 6px}
+  .call-card p{color:#b9c4cd;font-size:15px}
+  .call-card ul{list-style:none;margin-top:20px;padding-top:20px;border-top:1px solid rgba(238,242,245,.14);display:grid;gap:10px;font-size:14.5px}
+  .call-card li::before{content:"✓";color:var(--amber);font-weight:900;margin-right:10px}
+  .strip{background:var(--amber);color:var(--navy);overflow:hidden;white-space:nowrap}
+  .strip-track{display:inline-block;padding:13px 0;animation:scroll 30s linear infinite}
+  .strip span{font-size:13px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;padding:0 26px}
+  .strip span i{font-style:normal;padding-right:52px;opacity:.55}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.strip-track{animation:none}}
+  section{padding:clamp(72px,10vw,120px) 0}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:clamp(36px,5vw,56px);flex-wrap:wrap}
+  h2{font-weight:900;font-size:clamp(32px,4.6vw,52px);letter-spacing:-.02em;line-height:1.06}
+  h2 em{font-style:normal;color:var(--amber-dark)}
+  .sec-note{color:var(--muted);max-width:38ch;font-size:16px}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:.3em;color:var(--amber-dark);text-transform:uppercase;margin-bottom:16px}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:860px){.svc-grid{grid-template-columns:1fr}}
+  .svc{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:34px 32px}
+  .svc .tag{font-size:12px;font-weight:800;letter-spacing:.24em;color:var(--amber-dark);text-transform:uppercase}
+  .svc h3{font-size:clamp(22px,2.6vw,28px);font-weight:800;letter-spacing:-.01em;margin:10px 0 8px}
+  .svc p{color:var(--muted);font-size:15.5px}
+  .svc ul{list-style:none;margin-top:18px;display:grid;gap:8px;font-size:15px}
+  .svc li{border-top:1px solid var(--line);padding-top:8px;font-weight:600}
+  .fineprint{margin-top:24px;color:var(--faint);font-size:14px}
+  .how{background:var(--navy);color:#eef2f5}
+  .how .kicker{color:var(--amber)}
+  .how .sec-note{color:#b9c4cd}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:860px){.steps{grid-template-columns:1fr}}
+  .step{border:1px solid rgba(238,242,245,.16);border-radius:16px;padding:32px 28px;background:var(--navy-2)}
+  .step .num{font-size:40px;font-weight:900;color:var(--amber);line-height:1}
+  .step h3{font-size:20px;font-weight:800;margin:16px 0 8px}
+  .step p{color:#b9c4cd;font-size:15.5px}
+  .area{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .area span{border:1.5px solid var(--line);border-radius:999px;padding:9px 18px;font-weight:700;font-size:14px;background:var(--surface)}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:clamp(48px,6vw,72px)}
+  @media(max-width:860px){.reviews{grid-template-columns:1fr}}
+  .review{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:30px 28px;display:flex;flex-direction:column;gap:16px}
+  .review .stars{color:var(--amber-dark);letter-spacing:.06em;font-size:15px;font-weight:800}
+  .review p{font-size:16px}
+  .review cite{font-style:normal;font-size:13px;color:var(--muted);letter-spacing:.06em;margin-top:auto}
+  .contact{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px)}
+  @media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+  table.hours{width:100%;border-collapse:collapse;font-size:15.5px}
+  table.hours td{padding:11px 0;border-bottom:1px solid var(--line)}
+  table.hours td:last-child{text-align:right;font-weight:700}
+  .contact p{color:var(--muted);margin-top:16px;font-size:16.5px}
+  .contact p strong{color:var(--ink)}
+  .contact a.mail{color:var(--amber-dark);font-weight:700}
+  .big-call{display:block;font-size:clamp(30px,4vw,44px);font-weight:900;letter-spacing:-.02em;text-decoration:none;margin-top:22px}
+  .big-call:hover{color:var(--amber-dark)}
+  footer.site{padding:34px 0 54px;color:var(--faint);font-size:14px}
+  footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <span class="mark">F</span>
+      <span class="name">Fox Electric Inc<small>ELECTRICAL CONTRACTORS</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#area">Service Area</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn solid" href="tel:+16134984376">Call Now</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow">Elizabethtown-Kitley, Ontario</span>
+      <h1>Electrical work for <em>industry and home.</em></h1>
+      <p class="hero-sub">Industrial electrical installations and service, machinery relocation, and electrical work for businesses and homes across the Brockville and Prescott area.</p>
+      <div class="hero-ctas">
+        <a class="btn solid" href="tel:+16134984376">Call (613) 498-4376</a>
+        <a class="btn" href="#services">See Services</a>
+      </div>
+    </div>
+    <div class="call-card">
+      <span class="label">Emergencies</span>
+      <a class="number" href="tel:+16134984376">(613) 498-4376</a>
+      <p>Open 24/7 for emergency calls.</p>
+      <ul>
+        <li>Fully licensed and insured</li>
+        <li>ESA/ECRA #7009254</li>
+        <li>Industrial, commercial and residential</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Industrial Installations <i>·</i></span><span>Machinery Relocation <i>·</i></span><span>Safety Upgrades <i>·</i></span><span>Networking <i>·</i></span><span>PLC <i>·</i></span><span>Robotics <i>·</i></span>
+    <span>Industrial Installations <i>·</i></span><span>Machinery Relocation <i>·</i></span><span>Safety Upgrades <i>·</i></span><span>Networking <i>·</i></span><span>PLC <i>·</i></span><span>Robotics <i>·</i></span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">Services</div>
+        <h2>What Fox Electric <em>does</em></h2>
+      </div>
+      <p class="sec-note">Every job is different. Call for a quote and Fox Electric will price the work for your site or your home.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <span class="tag">Industrial</span>
+        <h3>Industrial Electrical</h3>
+        <p>Electrical installations and ongoing service for industrial sites in the Brockville area.</p>
+        <ul>
+          <li>Industrial installations and service</li>
+          <li>Machinery relocation</li>
+          <li>PLC and robotics work</li>
+          <li>Networking</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <span class="tag">Safety</span>
+        <h3>Safety Upgrades</h3>
+        <p>Safety upgrades for workplaces that need their electrical systems brought up to standard.</p>
+        <ul>
+          <li>Safety upgrades</li>
+          <li>System inspections and corrections</li>
+          <li>Call for a quote</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <span class="tag">Commercial</span>
+        <h3>Commercial Service</h3>
+        <p>Electrical service for businesses, shops and facilities across Leeds and Grenville.</p>
+        <ul>
+          <li>Installations and service calls</li>
+          <li>Lighting and power work</li>
+          <li>Call for a quote</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <span class="tag">Residential</span>
+        <h3>Residential Service</h3>
+        <p>Electrical work for homeowners, from service calls to larger projects.</p>
+        <ul>
+          <li>Service calls and troubleshooting</li>
+          <li>Installations and upgrades</li>
+          <li>Call for a quote</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fineprint">Fox Electric Inc is fully licensed and insured. ESA/ECRA licence #7009254.</p>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="kicker">How It Works</div>
+        <h2>Three steps</h2>
+      </div>
+      <p class="sec-note">For emergencies, call any time. Fox Electric is open 24/7 for emergency calls.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Call</h3>
+        <p>Describe the job or the problem. For industrial work, Fox Electric will arrange to see the site.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Get a quote</h3>
+        <p>The work is priced before it starts, so you know what the job involves and what it will cost.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Work done</h3>
+        <p>The work is completed by licensed electricians, with inspections arranged where the job requires them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <div class="kicker">Service Area</div>
+    <h2>Based in Elizabethtown-Kitley</h2>
+    <p class="sec-note" style="margin-top:16px;max-width:56ch">Fox Electric is listed at 1845 Oxford Avenue in Elizabethtown-Kitley and does most of its work in Brockville and the surrounding areas.</p>
+    <div class="area">
+      <span>Brockville</span><span>Elizabethtown-Kitley</span><span>Prescott area</span><span>Leeds and Grenville</span>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <span class="stars">4.6 out of 5</span>
+        <p>Average rating from 10 reviews on the Fox Electric Birdeye listing.</p>
+        <cite>Birdeye business listing</cite>
+      </div>
+      <div class="review">
+        <span class="stars">Review highlight</span>
+        <p>"Knowledgeable, efficient and trustworthy."</p>
+        <cite>Customer review highlight, Birdeye listing</cite>
+      </div>
+      <div class="review">
+        <span class="stars">Licensed</span>
+        <p>Fully licensed and insured, ESA/ECRA #7009254.</p>
+        <cite>Fox Electric job posting</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="kicker">Contact</div>
+      <h2>Call Fox Electric</h2>
+      <p>For project work, service calls and emergencies, call the office number below.</p>
+      <a class="big-call" href="tel:+16134984376">(613) 498-4376</a>
+      <p><strong>Fox Electric Inc</strong><br>1845 Oxford Avenue, Elizabethtown-Kitley, Ontario<br>Email: <a class="mail" href="mailto:foxelectricoffice@gmail.com">foxelectricoffice@gmail.com</a></p>
+    </div>
+    <div>
+      <div class="kicker">Hours</div>
+      <table class="hours">
+        <tr><td>Emergency calls</td><td>Open 24/7</td></tr>
+        <tr><td>Project and service work</td><td>Call to book</td></tr>
+      </table>
+      <p>Jobs are primarily in Brockville and the surrounding areas.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Fox Electric Inc. Sample mockup website built by Mitchel Visser. Business details from public listings.</span>
+    <span>Elizabethtown-Kitley, Ontario</span>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 24), {passive:true});
+</script>
+</body>
+</html>
